@@ -1,0 +1,53 @@
+create a package "special"
+	inside this package create two modules
+a) Arithmetic.py
+	with 
+		add(),multipy(),subtract() functions which take 2 parameters , perform the respective action and return the result.
+b) Display.py
+	wish() functions which accepts a name (as an  argument) and return the welcome message.
+
+now create "App.py" somewhere in which invoke all the above functions from "Arithmetic.py" and "Display.py"
+
+
+
+
+
+
+
+
+
+
+#Arithmeic#
+def add(a,b):
+    print(a+b)
+    return a+b
+
+def multipy(a,b):
+    print(a*b)
+    return a*b
+
+def subtract(a,b):
+    print(a-b)
+    return a-b
+
+#Display#
+def wish(name):
+
+    msg=print("Welcome")
+    return msg
+
+
+# a=input("enter name")
+# wish(a)
+
+
+#App#
+from special import Arithmetic ,Display
+
+Arithmetic.add(3,3)
+Arithmetic.multipy(3,3)
+Arithmetic.subtract(5,3)
+
+s=input("enter name")
+Display.wish(s)
+

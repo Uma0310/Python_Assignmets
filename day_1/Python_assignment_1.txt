@@ -1,0 +1,240 @@
+                         Name:Uma Mudkhede              
+
+
+
+
+      
+
+"""Q.1) 1)	accept a number and display its table.  """
+
+number = int(input ("Enter the number of which the user wants to print the multiplication table: "))
+print("the multiplication table of", +number)
+print("The datatype of a is",type(number))
+# We are using "for loop" to iterate the multiplication 10 times   
+
+for count in range(1,11):     #11 is the limit
+  print(number,'x',count,'=',number*count)
+
+
+
+
+
+
+
+
+""" 2)	using switch ….case   display whether accepted character is vowel or not."""
+
+char = str(input("Enter A character\n"))
+
+match(char): 
+    case 'A':
+        print("Entered Character is a Vowel")
+    case 'a':
+        print("Entered Character is a Vowel")
+    case 'E':
+        print("Entered Character is a Vowel")
+    case 'e':
+        print("Entered Character is a Vowel")
+    case 'I':
+        print("Entered Character is a Vowel")
+    case 'i':
+        print("Entered Character is a Vowel")
+    case 'O':
+        print("Entered Character is a Vowel")
+    case 'o':
+        print("Entered Character is a Vowel")
+    case 'U':
+        print("Entered Character is a Vowel")
+    case 'u':
+        print("Entered Character is a Vowel")
+    case _ :
+        print("Entered Character is not a Vowel")
+
+
+
+
+"""3)	Display numbers  1 to 10 using  While loop"""
+i=1
+while(i<=10):
+    print(i)
+    i+=1
+
+
+#4)	Display numbers from 3 to 30 except number 24  using while loop.
+i=3
+while(i<=30):
+    if i!=24:
+        print(i)
+    i+=1
+
+
+
+
+"""5)	accept marks from the user. Using if…….elif….  Else, 
+ display whether result is fail, pass, second class , first class, Distinction etc.  """
+
+i=int(input("Enter marks"))
+if(i>75):
+    print("Distinction")
+elif(i<75 and i>60):
+    print("First class")
+elif(i<60 and i>40):
+    print("Second Class")
+if(i<40):
+    print("Fail")
+
+
+
+#6) print the total of first 10 numbers.
+
+for i in range(1,11):
+    print(i)
+
+
+
+#7) accept numbers till user enters 0 and display the total of all the numbers entered.
+
+Total=0 #Initialize one variable 
+while True:     #while(1):
+    
+    i=int(input("Enter a number"))
+    if i==0:
+        break  # Exit the loop when the user enters 0
+    Total+=i   # Add the entered number to the Total
+print("Toatl is ", Total)
+
+
+
+
+
+#8) accept a character and display whether it is upper case or lower case or not an alphabet.
+
+# Accept a character from the user
+char =input("Enter a character")
+
+
+# Check whether it's uppercase, lowercase, or not an alphabet
+if char>='a' and char<='z':
+    print("This charaacter is in lower case")
+
+if char>='A' and char<='Z':
+    print("This charaacter is in Upper case")
+
+
+
+#9) display fibonicii series of 10 numbers
+
+    #fibonicii series is-->0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.
+
+a=0
+b=1
+sum=0
+n=int(input("enter a number"))
+print(a)
+print(b)
+for i in range (1,n-2):
+    sum=a+b
+    print(sum," ")
+    a=b
+    b=sum
+
+
+#10) display prime numbers from 3 to 30
+
+
+#prime number can only be evenly divided by 1 and itself, and it has no other divisors.
+#Examples of prime numbers include 2, 3, 5, 7, 11, 13, 17, and so on.
+
+for n in range(3,31):
+#n = int(input("Enter a number: "))
+    prime_flag = 0
+
+    if n > 1:
+        for i in range(2, n):
+            if (n % i == 0):
+                prime_flag = 1
+                break
+        if prime_flag == 0:
+            #print("prime numbers are")
+            print(n)
+
+
+
+
+#11) accept a number and display whether it is prime or not
+
+n = int(input("Enter a number: "))
+prime_flag = 0
+
+if n > 1:
+    for i in range(2, n):
+        if (n % i == 0):
+            prime_flag = 1
+            break
+    if prime_flag == 0:
+        print("Number is a Prime Number")
+    else:
+        print("Number is not a Prime Number")
+else:
+    print("Number is not a prime Number")
+
+
+
+"""12) print the following pattern:
+
+*
+* *
+* * *
+* * * *
+* * * * *    """
+
+for i in range(1,6):
+    for j in range (1,6):
+        if j<=i:
+            print("*",end=' ')  #This print is to print *    #end=' ' ->means ending with empty string 
+        else :
+            print(" ",end=' ')
+    print() #This print is to change the row and go to next line 
+
+
+
+
+
+Q.
+#    *
+#   * *
+#  * * *
+# * * * *
+
+for i in range(1,5):
+    print(" "*(4-i)+"* "*(i))
+            
+
+
+
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
